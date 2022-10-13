@@ -1,0 +1,27 @@
+[data-a="a"] {
+  /* state1 */
+  width: 400px;
+  height: 400px;
+  background: greenyellow;
+  margin: auto;
+  /* margin:T/R/B/L */
+  border: 10px solid black;
+  /* left right automatically but not for top-Bottom 
+  margin:T/B L/R*/
+
+  margin: 100px auto;
+  transform: rotate(0deg) scale(1, 1) translate(0px, 0px);
+  /* transition: property duration timing-function delay|initial|inherit */
+  transition: all 1s linear 1s;
+}
+/* element:hover{
+    property:value;} */
+[data-a="a"]:hover {
+  /* state2 */
+  transform: rotate(45deg) scale(1.5, 1.5) translate(100px, 0px);
+  /* we do not write duplication of transform property..we can use short hand prop
+  CSS transform property
+  1)Translate
+  2)Rotate
+  3)Scale */
+}
